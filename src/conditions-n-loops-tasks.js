@@ -21,8 +21,8 @@
  *  0  => true
  *  -5 => false
  */
-function isPositive(/* number */) {
-  throw new Error('Not implemented');
+function isPositive(inputNumber) {
+  return inputNumber >= 0;
 }
 
 /**
@@ -38,8 +38,14 @@ function isPositive(/* number */) {
  *  -5, 0, 5      => 5
  *  -0.1, 0, 0.2  => 0.2
  */
-function getMaxNumber(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getMaxNumber(number1, number2, number3) {
+  if (number1 >= number2 && number1 >= number3) {
+    return number1;
+  }
+  if (number2 >= number1 && number2 >= number3) {
+    return number2;
+  }
+  return number3;
 }
 
 /**
